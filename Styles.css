@@ -1,0 +1,471 @@
+/*----main page header and nav bar styling----*/
+
+/*no margin or padding for each page to ensure full width is used*/
+
+html, body{
+   padding: 0px;
+   margin: 0;
+}
+
+/*header styling for each page*/
+
+header {
+  background-color: #666;
+  padding: 10px;
+  font-size: 3vw;
+  color: black;
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
+  text-decoration-line: underline;
+}
+
+/*navigation bar styling for alternative pages to home*/
+
+ul.bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+
+}
+
+/*positioning of navigation bar contents on alternative pages to home*/
+li.bar{
+    float: left;  
+}
+
+li.bar a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+/*hover overlay styling of navigation bar*/
+
+li.bar a:hover {
+  display: block;
+  padding: 14px 16px;
+  background-color: gray;
+}
+
+/*display property of home page navigation bar*/
+
+nav{
+     display: inline-block; 
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+
+
+/*----------Main page styling----------*/
+
+/*header styling of other pages*/
+
+h2{
+    text-align: center;
+    font-size: 5vw;
+    margin: 0;
+    font-family:  Impact, Charcoal, sans-serif;
+    color: gold;
+}
+
+/*positioning and styling of main image container on the home page*/
+
+.main-image {
+  border: 20px solid black;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/*positioning and styling of main image on the home page*/
+
+.home-img{
+    width: 100%;
+    height: auto;
+}
+
+/*centering of the text box within the main image on the homepage, as well as text styling*/
+
+p.centered {
+  position: absolute;
+  margin: auto;
+  font-size: 4vw;
+  color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/*container for introductory paragraph*/
+
+article.intro {
+  width: 100%;
+  background-color: gray;
+}
+
+/*positioning of intro paragraph text, justifying the text and ensuring the margins are large enough */
+
+p.intro{
+    text-align: center;
+    font-size: 2vw;
+    margin-left: 220px;
+    margin-right: 220px;
+    text-align: justify;
+}
+
+/*styling the container for the featured content on the home page*/
+
+div.video{
+    border-bottom: solid 45px gray;
+
+}
+
+/*embedded youtube video, displayed in the centre of the page witha gold rounded border */
+
+iframe.main {   
+    display: block;
+    margin: 0 auto;
+    border: 20px solid gold;
+    border-radius: 20px;
+    resize:both;
+    overflow: hidden;
+}
+
+/*styling for text within secondary content containers*/
+
+p.secondary{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+/*styling and positioning of container for secondary content. positioned floating left with a width of 50% to ensure both containers fit in the same block*/
+
+
+
+.container {
+  float: left;
+  position: relative;
+  width: 50%;
+  padding: 30px;
+  background-color: black;
+  border: 10px solid gold;  
+}
+
+
+/*hover overlay for seconfary content, setting the functionality of the hover i.e opacity and transition timing*/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: gray;
+
+}
+
+.container:hover .overlay {
+  opacity: 1; 
+}
+
+/*centering text of the hover overlay*/
+
+.text {
+  color: black;
+  font-size: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: Impact, Charcoal, sans-serif;
+  text-align: center;
+}
+
+/*setting secondary content image width*/
+
+.image{
+    width:100%;
+
+}
+
+/*The above CSS styling and idea was referenced from W3 schools "How to image hover overlay" 
+located at the following link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade */
+
+
+/*-------------------------------------------------------------------------------------*/
+
+
+/* ----Artist of the week page - styling table styling for artist of the week page-------*/
+
+
+/*headr styling for alternative pages to home*/
+
+
+h3{
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
+  margin: 0;
+  font-size: 5vw;
+  color: gold;
+}
+
+/*table styling, table borders should collapse into a single border. */
+
+table {
+  border-collapse: inherit;
+  width: 100%;
+
+}
+
+/*top row style of text, font size etc.*/
+
+ th {
+  border: 1px solid black;
+  text-align: left;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 2vw;
+  padding: 1px;
+}
+
+/*table row style of text*/
+
+td {
+  font-size: 1.5vw;
+  border: 1px solid black;
+  padding: 10px; 
+}
+
+/*bakground colour of table*/
+
+tr {
+  background-color: #dddddd;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------*/
+
+
+/*-------news page and Gallery -------*/
+
+
+/*container for content border specifications and responsive width and height*/
+
+div.gallery {
+  border: 10px solid #ccc;
+  width:100%;
+  height: auto;
+}
+
+/*hover ooverlay style, border goes gold when hovering*/
+
+div.gallery:hover {
+  border: 10px solid gold;
+}
+
+/*content width set to 100% to ensure content fills page*/
+
+img.gal, img.news, iframe.gal{
+    width: 100%
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+ /*includes paddign and border in width and height*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*positional properties of the container for media content*/
+
+.responsive {
+  float: left;
+  width: 50%;
+}
+
+/*media queries to create responsove content on home, news and gallery pages*/
+
+@media only screen and (max-width: 700px) {
+  .responsive, .main, p.intro, .container {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive, .main, p.intro, .container {
+    width: 100%;
+  }
+}
+
+
+/*ensures container is large enough to fit content within it, stops overflow*/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.email{
+    padding:1px;
+}
+
+
+/*The above CSS styling and idea was referenced from W3 schools "Responsive Gallery" 
+located at the following link: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive */
+
+
+
+
+/*-------------------------------------------------------------------------------------*/
+
+
+/*-----styling for links page------*/
+
+/*list container style*/
+
+ul.list {
+  background: black;
+  padding: 10px;
+}
+
+/*list text style*/
+
+li.list {
+  font-size: 1.5vw;
+  background: black;
+  padding: 5px;
+}
+
+/*list styling*/
+
+ul.list li.list {
+  background: #666;
+  margin: 10px;
+}
+
+/*grid layout, padding and colouring*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #666;
+  padding:10px;
+}
+
+/*Style of grid contents*/
+
+.grid-item {
+  border: solid 1px gold;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/*grid item heading text and background styling*/
+
+p.listbreak{
+  padding: 10px;
+  color: black;
+  margin: 0;
+  font-size: 3vw;
+  color: gold;
+  font-family:  Impact, Charcoal, sans-serif;
+}
+
+/*Hover styling for links, links are white, when hovered over they will turn gold and underlined*/
+
+a.links:link{
+  color: white;
+  text-decoration: none;
+}
+
+a.links:visited{
+  color: white;
+  text-decoration: none;
+}
+
+a.links:hover {
+  color: gold;
+  text-decoration: underline;
+}
+
+a.links:active { 
+  text-decoration: underline;
+}
+
+
+/*/*The above CSS styling and idea was referenced from W3 schools "Grid Layout module" 
+located at the following link: https://www.w3schools.com/css/css_grid.asp 
+
+and W3 schools "CSS links" found here: https://www.w3schools.com/css/css_link.asp */ 
+
+
+
+
+/*-------------------------------------------------------------------------------------*/
+
+/*-----footer css for each page----*/
+
+/*general styling of footer background colour, padding, positioning etc.*/
+
+.footer
+{
+  background-color:black;
+  padding:10px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  clear: both;
+  color:#737373;
+}
+
+/*footer text colour*/
+
+.footer a
+{
+  color:white;
+}
+
+/*footer text hovering colour and decoration, text will go gray and undelrline when hovered over*/
+.footer a:hover
+{
+  color:lightgray;
+  text-decoration: underline;
+}
+
+/*copyright text positioning*/
+
+.copyright-text
+{
+  padding-left: 15px;
+  margin:0;
+}
+
+
+/*The above CSS styling and idea was referenced from the following webpage on building a responsive footer: https://blog.eduonix.com/web-programming-tutorials/build-responsive-website-footer-using-html-css*/
